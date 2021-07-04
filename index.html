@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>Kurilka</title>
+    </head>
+
+    <body>
+        <div id="stl_cont" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_cont1" style="width:200px;height:200px;margin:0 auto;"></div>
+        <script src="/viewstl/build/stl_viewer.min.js"></script>        
+        <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont"),
+                {
+		    auto_resize:false,
+		    zoom:45,
+                    models:
+                    [
+                        {filename:"../../PumpTotal0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
+                    ]
+                }
+            );
+	    var stl_viewer1=new StlViewer
+            (
+                document.getElementById("stl_cont1"),
+                {
+		    auto_resize:true,
+		    zoom:10,
+                    models:
+                    [
+                        {filename:"../../PumpEntry0.2.stl", rotationx:-0.5, rotationy:0.5, display:"wireframe", animation:{delta:{rotationx:1, msec:10000, loop:true}}}
+                    ]
+                }
+            );
+
+        </script>
+        
+    </body>
+</html> 
