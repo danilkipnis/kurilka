@@ -3,20 +3,21 @@
 <html>
     <head>
         <title>Kurilka</title>
-	<style>
-		pre {text-align: center; display: inline-block;}
-	</style>
     </head>
 
     <body>
         <div id="stl_top" style="width:300px;height:400px;margin:0 auto;"></div>
-	<pre> top </pre>
-        <div id="stl_entry" style="width:300px;height:300px;margin:0 auto;"></div>
-	<pre> entry </pre>
-        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
-	<pre> bottom </pre>
+	<p style="text-align:center;"> top </p>
 
-        <script src="/kurilka/viewstl/build/stl_viewer.min.js">
+        <div id="stl_entry" style="width:300px;height:300px;margin:0 auto;"></div>
+	<p style="text-align:center;"> entry </p>
+
+        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
+	<p style="text-align:center;"> bottom </p>
+
+	<script src="/kurilka/viewstl/build/stl_viewer.min.js"></script>
+
+        <script>
             var stl_viewer=new StlViewer
             (
                 document.getElementById("stl_top"),
