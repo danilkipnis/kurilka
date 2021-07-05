@@ -10,12 +10,13 @@
 
     <body>
         <div id="stl_top" style="width:300px;height:400px;margin:0 auto;"></div>
-        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
+	<pre> top </pre>
         <div id="stl_entry" style="width:300px;height:300px;margin:0 auto;"></div>
+	<pre> entry </pre>
+        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
+	<pre> bottom </pre>
 
-        <script src="/kurilka/viewstl/build/stl_viewer.min.js"></script>
-
-        <script>
+        <script src="/kurilka/viewstl/build/stl_viewer.min.js">
             var stl_viewer=new StlViewer
             (
                 document.getElementById("stl_top"),
@@ -28,10 +29,8 @@
                     ]
                 }
             );
-	</script>
-	<pre> top </pre>
 
-        <script>
+
 	    var stl_viewer1=new StlViewer
             (
                 document.getElementById("stl_entry"),
@@ -44,10 +43,8 @@
                     ]
                 }
             );
-        </script>
-	<pre> entry </pre>
 
-	<script>
+
             var stl_viewer=new StlViewer
             (
                 document.getElementById("stl_bottom"),
@@ -60,8 +57,8 @@
                     ]
                 }
             );
+
 	</script>
-	<pre> bottom </pre>
 
     </body>
 </html> 
