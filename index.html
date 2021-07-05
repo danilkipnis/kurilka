@@ -3,19 +3,22 @@
 <html>
     <head>
         <title>Kurilka</title>
+	<style>
+		pre {text-align: center; display: inline-block;}
+	</style>
     </head>
 
     <body>
-        <div id="stl_rect" style="width:300px;height:400px;margin:0 auto;"></div>
-        <div id="stl_box" style="width:300px;height:300px;margin:0 auto;"></div>
-        <div id="pre" style="text-align:center;display:inline-block; auto;"></div>
+        <div id="stl_top" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_entry" style="width:300px;height:300px;margin:0 auto;"></div>
 
         <script src="/kurilka/viewstl/build/stl_viewer.min.js"></script>
 
         <script>
             var stl_viewer=new StlViewer
             (
-                document.getElementById("stl_rect"),
+                document.getElementById("stl_top"),
                 {
 		    auto_resize:false,
 		    zoom:45,
@@ -31,7 +34,7 @@
         <script>
 	    var stl_viewer1=new StlViewer
             (
-                document.getElementById("stl_box"),
+                document.getElementById("stl_entry"),
                 {
 		    auto_resize:true,
 		    zoom:10,
@@ -47,7 +50,7 @@
 	<script>
             var stl_viewer=new StlViewer
             (
-                document.getElementById("stl_rect"),
+                document.getElementById("stl_bottom"),
                 {
 		    auto_resize:false,
 		    zoom:45,
