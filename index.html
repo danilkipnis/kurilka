@@ -7,13 +7,13 @@
     </head>
 
     <body>
-        <div id="stl_top" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_top" style="width:100%;margin:0 auto;"></div>
 	<div class="container"> <pre> top </pre> </p>
 
-        <div id="stl_entry" style="width:300px;height:300px;margin:0 auto;"></div>
+        <div id="stl_entry" style="width:100%;margin:0 auto;"></div>
 	<div class="container"> <pre> entry </pre> </p>
 
-        <div id="stl_bottom" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_bottom" style="width:100%;margin:0 auto;"></div>
 	<div class="container"> <pre> bottom </pre> </p>
 
 	<script src="/kurilka/viewstl/build/stl_viewer.min.js"></script>
@@ -24,7 +24,7 @@
                 document.getElementById("stl_top"),
                 {
 		    auto_resize:false,
-		    zoom:45,
+		    zoom:15,
                     models:
                     [
                         {filename:"../../PumpTop0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
@@ -38,7 +38,7 @@
                 document.getElementById("stl_entry"),
                 {
 		    auto_resize:true,
-		    zoom:10,
+		    zoom:5,
                     models:
                     [
                         {filename:"../../PumpEntry0.2.stl", rotationx:-0.5, rotationy:0.5, display:"wireframe", animation:{delta:{rotationx:1, msec:10000, loop:true}}}
@@ -52,7 +52,7 @@
                 document.getElementById("stl_bottom"),
                 {
 		    auto_resize:false,
-		    zoom:45,
+		    zoom:15,
                     models:
                     [
                         {filename:"../../PumpBottom0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
