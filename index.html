@@ -6,25 +6,32 @@
     </head>
 
     <body>
-        <div id="stl_cont" style="width:300px;height:400px;margin:0 auto;"></div>
-        <div id="stl_cont1" style="width:200px;height:200px;margin:0 auto;"></div>
+        <div id="stl_rect" style="width:300px;height:400px;margin:0 auto;"></div>
+        <div id="stl_box" style="width:300px;height:300px;margin:0 auto;"></div>
+        <div id="pre" style="text-align:center;display:inline-block; auto;"></div>
+
         <script src="/kurilka/viewstl/build/stl_viewer.min.js"></script>
+
         <script>
             var stl_viewer=new StlViewer
             (
-                document.getElementById("stl_cont"),
+                document.getElementById("stl_rect"),
                 {
 		    auto_resize:false,
 		    zoom:45,
                     models:
                     [
-                        {filename:"../../PumpTotal0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
+                        {filename:"../../PumpTop0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
                     ]
                 }
             );
+	</script>
+	<pre> top </pre>
+
+        <script>
 	    var stl_viewer1=new StlViewer
             (
-                document.getElementById("stl_cont1"),
+                document.getElementById("stl_box"),
                 {
 		    auto_resize:true,
 		    zoom:10,
@@ -34,8 +41,24 @@
                     ]
                 }
             );
-
         </script>
-        
+	<pre> entry </pre>
+
+	<script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_rect"),
+                {
+		    auto_resize:false,
+		    zoom:45,
+                    models:
+                    [
+                        {filename:"../../PumpBottom0.3.stl", rotationx:-0.79, rotationy:0.1, display:"wireframe", animation:{delta:{rotationy:1, msec:10000, loop:true}}}
+                    ]
+                }
+            );
+	</script>
+	<pre> bottom </pre>
+
     </body>
 </html> 
