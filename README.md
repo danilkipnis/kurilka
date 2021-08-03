@@ -13,11 +13,6 @@ git submodule init
 git submodule update
 ```
 
-Switch branch to master
-```
-git checkout master
-```
-
 Start http server inside kurilka directory
 ```
 python3 -m http.server 8080
