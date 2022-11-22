@@ -1,6 +1,6 @@
 kurilka
 =======
-This is kurilka, a 3d variation on a Rubén Grilo (@slatersociety) theme. Dedicated to my neighbor Jochannes (Jo) Kühnel.
+This is kurilka, a 3d variation on a theme by Rubén Grilo (@slatersociety). Dedicated to my neighbor Jochannes (Jo) Kühnel.
 
 Test page on a local machine
 ----------------------------
